@@ -1,7 +1,7 @@
 # Awesome project
 In this project anyone can learn and contribute to common DOs and DON'Ts in programming with C#, SQL and in general.
 
-##Intro
+## Intro
 This repository is split into several projects to take an isolated look into each specific area.
 
 ## Contribution
