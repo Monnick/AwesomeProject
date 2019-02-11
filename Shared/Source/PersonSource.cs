@@ -9,6 +9,8 @@ namespace Shared.Source
 {
 	public sealed class PersonSource
 	{
+        public const string DATA_SOURCE = ".\\Ressources\\storage_person.json";
+
 		private List<Person> _personSource;
 		private static Lazy<PersonSource> _instance = new Lazy<PersonSource>(() => new PersonSource());
 
@@ -25,7 +27,7 @@ namespace Shared.Source
 		{
 			EntityLoaded = null;
 
-			var storage = File.ReadAllText(".\\Ressources\\storage_person.json");
+			var storage = File.ReadAllText(DATA_SOURCE);
 
 			_personSource = new List<Person>(Newtonsoft.Json.JsonConvert.DeserializeObject<Person[]>(storage));
 		}

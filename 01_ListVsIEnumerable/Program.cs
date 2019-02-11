@@ -6,6 +6,8 @@ namespace _01_ListVsIEnumerable
 	{
 		static void Main(string[] args)
 		{
+            Console.WriteLine("Example: List vs IEnumerable");
+
 			const string NAME = "Duke Twinborne";
 
 			int entitiesLoadedByList = 0;
